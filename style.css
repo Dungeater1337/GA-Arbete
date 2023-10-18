@@ -65,10 +65,28 @@ footer{
     background-color: #222;
 }
 
-#IndexMain
-{
+#IndexMain{
     display: grid;
     grid-template-areas:
     "section section section";
     text-align: center;
+}
+
+img{
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+img:hover{
+    opacity: 1;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+section
+{
+    margin-top: auto;
+    margin-bottom: auto;
 }
