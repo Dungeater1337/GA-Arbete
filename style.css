@@ -65,15 +65,13 @@ footer {
     background-color: #222;
 }
 
-#IndexMain {
+
+#IndexMain{
+
     display: grid;
     grid-template-areas:
     "section section section";
     text-align: center;
-}
-
-figure{
-    
 }
 
 img {
