@@ -75,6 +75,14 @@ main {
     background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
 }
 
+.ReviewMain{
+    grid-template-areas: 
+    "articleReview"
+    "figureReview"
+    "sectionReview"
+    ;
+}
+
 .sectionIndex{
     display: flex;
     justify-content: center;
@@ -97,20 +105,15 @@ figure:hover {
 }
 
 footer {
-    display: grid;
-    grid-area: footer;
-    color: white;
-    background: black;
-    border-top-style: solid;
-    border-color: white;
-    border-width: 1px;
-    grid-template-areas:
-    "sectionF sectionF" 
+   grid-area: footer; 
+   background-color: #393e46;
+   display: flex;
+   border-top: solid;
+   border-color: white;
+   border-width: 1px;
+   justify-content:center;
 }
 
-.sf{
-    grid-area: sectionF;
-}
 
 #IndexMain{
     display: grid;
