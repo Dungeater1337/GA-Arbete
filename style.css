@@ -75,7 +75,7 @@ main {
     background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
 }
 
-section{
+.sectionIndex{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,9 @@ section{
 
 figure {
     transform: scale(1.0);
-    transition: transform 0.6s ease-in-out; 
+    transition: transform 1.0s ease-in-out; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, .6);
+    border-radius: 1em;
 }
 
 figure:hover {
@@ -95,13 +97,19 @@ figure:hover {
 }
 
 footer {
+    display: grid;
     grid-area: footer;
     color: white;
     background: black;
     border-top-style: solid;
     border-color: white;
     border-width: 1px;
-    display: grid;
+    grid-template-areas:
+    "sectionF sectionF" 
+}
+
+.sf{
+    grid-area: sectionF;
 }
 
 #IndexMain{
@@ -122,7 +130,7 @@ img {
       opacity: 0;
     }
     to {
-      opacity: 0.8;
+      opacity: 0.9;
     }
 }
 
@@ -133,12 +141,12 @@ img {
     height: 363px;
     width: 255px;
     transform: translate(-50%, -50%);
-    background-color: white; /* Background color for the text overlay */
-    opacity: 0.8;
-    color: black; /* Text color */
+    background-color: white; 
+    opacity: 0.9;
+    color: black; 
     padding: 10px;
     border-radius: 1em;
-    display: none; /* Initially, hide the text */
+    display: none; 
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -151,5 +159,5 @@ img {
 
 figure:hover .text-overlay {
     display: block; /* Show the text overlay when hovering over the container */
-    animation: fadeIn 1.5s;
+    animation: fadeIn 1.8s;
 }
