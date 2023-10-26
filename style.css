@@ -85,12 +85,18 @@ li a:hover{
     color: black;
 }
 
+
+
+aside{
+    grid-area: aside;
+}
+
+
 .ReviewMain{
+    display: grid;
     grid-area: mainReview;
     grid-template-areas: 
     "articleReview"
-    "figureReview"
-    "sectionReview"
     ;
 }
 
