@@ -127,11 +127,12 @@ li a:hover{
 
 .ReviewFigure{
     grid-area: figureReview;
-    background-image: url("https://cs.money/blog/wp-content/uploads/sites/2/2023/03/photo_2023-03-22_17-31-28.jpg");
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
     position: relative;
     display: flex;
     justify-content: center;
     border-radius: 1em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
 }
 
 .ReviewFigure::before {
@@ -224,7 +225,7 @@ img {
     text-align: Left;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 36px;
+    font-size: 3rem;
 }
 
 .ArticleByLine{
@@ -274,9 +275,11 @@ img {
 
 .RightRail{
     grid-area: RightRail;
-    background-color: rgb(238, 237, 237);
+    background-color: rgb(214, 213, 213);
     margin-right: 1em;
     border-radius: 1em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    height: min-content;
 }
 
 .Market{
@@ -284,9 +287,14 @@ img {
     margin-left: 2em;
     margin-right: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.20rem;
     font-weight: bold;
     text-align: center;
+}
+
+.MarketFigure{
+    display: flex;
+    justify-content: center;
 }
 
 .MarketPlace{
@@ -321,3 +329,4 @@ figure:hover .text-overlay {
     display: block; /* Show the text overlay when hovering over the container */
     animation: fadeIn 1.8s;
 }
+
