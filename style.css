@@ -85,12 +85,6 @@ li a:hover{
 }
 
 
-
-aside{
-    grid-area: aside;
-}
-
-
 .ReviewMain{
     display: grid;
     grid-area: mainReview;
@@ -101,11 +95,12 @@ aside{
 
 .ReviewAside{
     grid-area: aside;
-    background-color: #393e46;
+    background-color: white;
     border-right: 1px;
     border-color: white;
     border-top-style: none;
     border-right-style: solid;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .AsideNav{
@@ -113,18 +108,21 @@ aside{
     align-items: center;
     justify-content: center;
     border-top-style: none;
+    background-color: white;
 }
 
 .AsideUl a{
     border-right: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+    color: black;
+    padding: 2em;
+    margin-top: 1em;
 }
 
 .ReviewArticle{
     grid-area: articleReview;
     background-color: white;
-    
 }
 
 .ReviewFigure{
@@ -155,9 +153,15 @@ aside{
 }
 
 .ReviewSection{
-    grid-area: sectionReview;
-    background-color: beige;
-    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "ArticleText RightRail"
+    ;
+    grid-template-columns: 2fr 1fr;
+}
+
+.ReviewSection{
+    grid-area: RightRail;
 }
 
 .sectionIndex{
@@ -223,8 +227,71 @@ img {
     font-size: 36px;
 }
 
-.ArticleText{
+.ArticleByLine{
+    margin-left: 1em;
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ArticleByLine :first-child{
+    border-right: solid;
+    color: black; 
+    padding: 1em;
+}
+
+.ArticleAuthor{
+    margin-left: 1em;
+    font-weight: bolder;
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: red;
+    font-family: 'Inter Var', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.ArticleDate{
+    font-weight: bolder;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: gray;
+    font-family: 'Inter Var', sans-serif;
+    text-rendering: optimizeLegibility;
+    padding: 1em;
+}
+
+.ArticleText{
+    grid-area: ArticleText;
+    text-align: left;
+    margin-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+.RightRail{
+    grid-area: RightRail;
+    background-color: rgb(238, 237, 237);
+    margin-right: 1em;
+    border-radius: 1em;
+}
+
+.Market{
+    text-align: left;
+    margin-left: 2em;
+    margin-right: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.MarketPlace{
+    height: 100px;
+    width: 290px;
 }
 
 .text-overlay {
