@@ -50,10 +50,11 @@ header h1 {
 }
 
 aside h1{
-    font-size: 2.5rem;
+    font-size: 36px;
     margin: 0;
     text-transform: uppercase;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
 
@@ -111,7 +112,7 @@ li a:hover{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-aside >nav{
+aside > nav{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,15 +121,6 @@ aside >nav{
     position: sticky;
     top: 10px;
 }
-/*.AsideNav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-style: none;
-    background-color: white;
-    position: sticky;
-    top: 10px;
-}*/
 
 aside ul a{
     border-right: none;
@@ -144,7 +136,7 @@ aside ul a{
     background-color: white;
 }
 
-.ReviewFigure{
+article figure{
     grid-area: figureReview;
     background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
     position: relative;
@@ -165,7 +157,7 @@ aside ul a{
     filter: blur(5px); /* Apply the blur to the pseudo-element */
 }
 
-.ReviewImg{
+article img{
     height: 512px;
     width: 975px;
     border-radius: 1em;
@@ -239,7 +231,7 @@ img {
     }
 }
 
-.ArticleTitle{
+article h2{
     margin-left: 1em;
     text-align: Left;
     font-family: Arial, Helvetica, sans-serif;
@@ -258,17 +250,25 @@ img {
 
 .ArticleByLine :first-child{
     border-right: solid;
-    color: black; 
+    color: black;
     padding: 1em;
-}
-
-.ArticleAuthor{
     margin-left: 1em;
     font-weight: bolder;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    color: red;
+    font-family: 'Inter Var', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.ArticleByLine :nth-child(2){
+    color: rgba(130, 124, 124, 0.98);
+    padding: 1em;
+    margin-left: 1em;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     font-family: 'Inter Var', sans-serif;
     text-rendering: optimizeLegibility;
 }
@@ -301,7 +301,7 @@ img {
     height: min-content;
 }
 
-.Market{
+.RightRail p{
     text-align: left;
     margin-left: 2em;
     margin-right: 1em;
@@ -311,12 +311,12 @@ img {
     text-align: center;
 }
 
-.MarketFigure{
+.RightRail figure{
     display: flex;
     justify-content: center;
 }
 
-.MarketPlace{
+.RightRail img{
     height: 100px;
     width: 290px;
 }
