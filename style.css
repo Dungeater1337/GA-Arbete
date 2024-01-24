@@ -244,7 +244,7 @@ footer {
     width: 17%;
     height: 100vh;
     background-color: white;
-    animation: slideInFromLeft 1.7s ease-in-out forwards; /* Animation duration and easing */
+    animation: slideInFromLeft 1.2s ease-in-out forwards; /* Animation duration and easing */
 }
 
 article h2{
