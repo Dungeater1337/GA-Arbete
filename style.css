@@ -299,7 +299,7 @@ article h2{
 
 .RightRail{
     grid-area: RightRail;
-    background-color: rgb(238, 238, 238);
+    background-color: White;
     margin-right: 1em;
     border-radius: 1em;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
