@@ -1,3 +1,4 @@
+/*
 let userArray = [];
 let indexMain;
 
